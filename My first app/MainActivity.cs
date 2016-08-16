@@ -28,9 +28,14 @@ namespace My_first_app
             button.Text = string.Format("{0} clicks!", count++); };
 
             Button button2 = FindViewById<Button>(Resource.Id.mybutton2);
-            var text = "looong click";
+            var text = "Very looong click";
             button2.LongClick += delegate {
                 button2.Text = text;
+            };
+            Button button3 = FindViewById<Button>(Resource.Id.mybutton3);
+            var text2 = "Very looong click";
+            button2.LongClick += delegate {
+                button2.Text = text2;
             };
         }
     }
