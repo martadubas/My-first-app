@@ -24,7 +24,14 @@ namespace My_first_app
             // and attach an event to it
             Button button = FindViewById<Button>(Resource.Id.MyButton);
 
-            button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
+            button.Click += delegate {
+            button.Text = string.Format("{0} clicks!", count++); };
+
+            Button button2 = FindViewById<Button>(Resource.Id.mybutton2);
+            var text = "looong click";
+            button.LongClick += delegate {
+                button.Text = text;
+            };
         }
     }
 }
