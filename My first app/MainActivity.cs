@@ -29,8 +29,8 @@ namespace My_first_app
 
             Button button2 = FindViewById<Button>(Resource.Id.mybutton2);
             var text = "looong click";
-            button.LongClick += delegate {
-                button.Text = text;
+            button2.LongClick += delegate {
+                button2.Text = text;
             };
         }
     }
